@@ -13,11 +13,11 @@
 
 // Шрифт по умолчанию ====================================================================================================
 $fontFamily: "Open Sans", sans-serif;
-$fontSize: rem(14); // где 14(px) - размер шрифта по умолчанию из макета
+$fontSize: rem(16); // где 14(px) - размер шрифта по умолчанию из макета
 
 // Основной цвет шрифта
-$mainColor: #aaa;
-$mainHover: #dcca87;
+$mainColor: #000;
+$mainHover: #fff;
 
 // НАСТРОЙКИ ====================================================================================================
 // Минимальная ширина страницы
@@ -25,10 +25,10 @@ $minWidth: 320;
 // Ширина полотна (макета)
 $maxWidth: 1920;
 // Ширина ограничивающего контейнера (0 = нет ограничения)
-$maxWidthContainer: 1300;
+$maxWidthContainer: 1170;
 // Общий отступ у контейнера
 // (30 = по 15px слева и справа, 0 = нет отступа)
-$containerPadding: 30;
+$containerPadding: 20;
 
 // Тип адаптива:
 // 1 = отзывчивость (у контейнера нет брейкпоинтов),
@@ -49,7 +49,7 @@ $mobileSmall: em(479.98); // Телефоны S
 
 body {
 	color: $mainColor;
-	background-color: #0c0b08;
+	background-color: #E5E5E5;
 
 	// Скролл заблокирован
 	.lock & {
@@ -93,7 +93,7 @@ body {
 	[class*="__container"] {
 		@if ($maxWidthContainer>0) {
 			max-width: rem($maxWidthContainer);
-			box-sizing: content-box;
+			box-sizing: border-box;
 			margin: 0 auto;
 		}
 

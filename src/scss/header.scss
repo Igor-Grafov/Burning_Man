@@ -1,0 +1,47 @@
+.header {
+   color: $mainHover;
+   text-transform: uppercase;
+   @include adaptiveValue("font-size", 14, 12);
+   letter-spacing: 0.1em;
+   position: absolute;
+   left: 0;
+   right: 0;
+   @include adaptiveValue("padding-top", 57, 25);
+   // .header__container
+
+   &__container {}
+
+   // .header__inner
+
+   &__inner {
+      display: flex;
+   }
+}
+
+.header-logo {}
+
+.nav {
+   display: flex;
+   align-items: center;
+   @include adaptiveValue("padding-left", 70, 35);
+}
+
+.menu {
+
+   // .menu__list
+
+   &__list {
+      display: flex;
+      column-gap: 40px;
+   }
+
+   // .menu__item
+
+   &__item {}
+
+   // .menu__phone
+
+   &__phone {
+      @include adaptiveValue("padding-left", 500, 100);
+   }
+}
