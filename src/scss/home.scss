@@ -1,5 +1,48 @@
 .promo {
+   padding-top: 322px;
    background: url('@img/bg.jpg') center no-repeat;
    background-size: cover;
    min-height: 100vh;
+   text-transform: uppercase;
+   color: $mainHover;
+   line-height: 1.51;
+   font-family: 'Anton', sans-serif;
+
+
+
+   // .promo__inner
+
+   &__inner {}
+
+   // .promo__subtitle
+
+   &__subtitle {
+      @include adaptiveValue("font-size", 30, 15);
+      letter-spacing: 0.1em;
+   }
+
+   // .promo__title
+
+   &__title {
+      @include adaptiveValue("font-size", 100, 50);
+      font-weight: 400;
+      margin-bottom: 19px;
+   }
+
+   // .promo__btn
+
+   &__btn {
+      @include adaptiveValue("font-size", 17, 12);
+
+
+   }
+
+   // .promo__button
+
+   &__button {
+      text-transform: uppercase;
+      border: 1px solid #fff;
+      padding: 18px 23px;
+   }
+
 }
